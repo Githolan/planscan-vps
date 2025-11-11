@@ -1,0 +1,62 @@
+# === Dependencies ===
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+
+# === Environment & Secrets ===
+.env
+.env.*
+ssl/
+github-token.txt
+
+# === Logs & Caches ===
+npm-debug.log*
+yarn-error.log*
+*.log
+.tmp/
+.cache/
+coverage/
+
+# === Build artifacts ===
+dist/
+build/
+
+# === Local Tools / Editors / Temporary ===
+.claude/
+.playwright-mcp/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# === Docker & Compose (not used in Coolify buildpacks) ===
+Dockerfile*
+docker-compose*.yml
+docker-compose*.yaml
+
+# === Local Setup Scripts / Coolify helpers ===
+coolify-*.*
+push-*.*
+setup-*.*
+SETUP-DOMAIN.bat
+hosts-addition.txt
+
+# === Backups, copies, old versions ===
+*.bak
+*_old.*
+* - copia.*
+baklocal/
+server_old.js
+server - copia.js
+_ul/
+
+# === Large Assets & Test Media ===
+plan*.jpg
+PlanScan_v3.2.html
+*.png
+
+# === Other local docs ===
+DOMAIN-SETUP-COMPLETE.md
+HTTPS-PORT-443-SETUP.md
+MANUAL-DOMAIN-SETUP.md
+SESSION-SUMMARY-TODAY.md
+CLAUDE.md
