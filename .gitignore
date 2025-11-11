@@ -60,3 +60,8 @@ HTTPS-PORT-443-SETUP.md
 MANUAL-DOMAIN-SETUP.md
 SESSION-SUMMARY-TODAY.md
 CLAUDE.md
+
+# extra local files
+.dockerignore
+_ul
+coolify github read token.md
