@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  planscan:
+    build: .
+    container_name: planscan
+    command: bash -c "npm install && node server.js"
+    ports:
+      - "3000:3000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.planscan.rule=Host(`planscan.holancloud.com`)"
+      - "traefik.http.routers.planscan.entrypoints=http,https"
+      - "traefik.http.routers.planscan.tls=true"
+      - "traefik.http.services.planscan.loadbalancer.server.port=3000"
