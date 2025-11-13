@@ -13,3 +13,9 @@ services:
       - "traefik.http.routers.planscan.entrypoints=http,https"
       - "traefik.http.routers.planscan.tls=true"
       - "traefik.http.services.planscan.loadbalancer.server.port=3000"
+    networks:
+      - coolify
+
+networks:
+  coolify:
+    external: true
