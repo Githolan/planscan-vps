@@ -1,12 +1,12 @@
 version: "3.9"
 
+version: "3.9"
+
 services:
   planscan:
-    image: node:18-alpine
-    working_dir: /app
-    volumes:
-      - ./:/app
-    command: sh -c "npm install && node server.js"
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     labels:
